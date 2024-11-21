@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+
+
+<!-- 
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Home Loan EMI Calculator
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-100">
+  <div class="bg-orange-500 text-white p-4">
+   <div class="container mx-auto flex justify-between items-center">
+    <div class="flex items-center space-x-4">
+     <i class="fas fa-bars text-2xl">
+     </i>
+     <span class="text-xl font-bold">
+      WEBSITE
+     </span>
+    </div>
+    <div class="flex items-center space-x-4">
+     <i class="fas fa-user-circle text-2xl">
+     </i>
+     <span class="text-xl">
+      Bank
+     </span>
+    </div>
+   </div>
+  </div>
+  <div class="bg-white shadow-md">
+   <div class="container mx-auto flex justify-between items-center py-4">
+    <div class="flex space-x-8">
+     <a class="text-orange-500 font-bold" href="#">
+      EMI CALCULATOR
+     </a>
+     <a class="text-gray-600" href="#">
+      HOME LOAN
+     </a>
+     <a class="text-gray-600" href="#">
+      ELIGIBILITY CALCULATOR
+     </a>
+     <a class="text-gray-600" href="#">
+      INTEREST RATES
+     </a>
+     <a class="text-gray-600" href="#">
+      BALANCE TRANSFER
+     </a>
+     <a class="text-gray-600" href="#">
+      MORE
+     </a>
+    </div>
+    <button class="bg-red-600 text-white px-4 py-2 rounded">
+     GET IN TOUCH
+    </button>
+   </div>
+  </div>
+  <div class="container mx-auto mt-8">
+   <div class="bg-white p-8 rounded shadow-md flex">
+    <div class="w-2/3 pr-8">
+     <h2 class="text-xl font-bold mb-4">
+      Select the loan amount range
+     </h2>
+     <div class="mb-4">
+      <label class="inline-flex items-center">
+       <input checked="" class="form-radio text-orange-500" name="loan_range" type="radio"/>
+       <span class="ml-2">
+        0 - 1 Crore
+       </span>
+      </label>
+      <label class="inline-flex items-center ml-4">
+       <input class="form-radio text-orange-500" name="loan_range" type="radio"/>
+       <span class="ml-2">
+        1 Crore - 5 Crore
+       </span>
+      </label>
+      <label class="inline-flex items-center ml-4">
+       <input class="form-radio text-orange-500" name="loan_range" type="radio"/>
+       <span class="ml-2">
+        5 Crore - 30 Crore
+       </span>
+      </label>
+     </div>
+     <div class="mb-4">
+      <label class="block text-gray-700 font-bold mb-2">
+       Loan Amount
+      </label>
+      <div class="relative">
+       <input class="w-full border border-gray-300 rounded py-2 px-4" readonly="" type="text" value="₹20,00,000"/>
+       <input class="w-full mt-2" max="10000000" min="0" type="range" value="2000000"/>
+      </div>
+     </div>
+     <div class="mb-4">
+      <label class="block text-gray-700 font-bold mb-2">
+       Illustrative Interest Rate p.a.
+      </label>
+      <div class="relative">
+       <input class="w-full border border-gray-300 rounded py-2 px-4" readonly="" type="text" value="8.75 %"/>
+       <input class="w-full mt-2" max="20" min="1" type="range" value="8.75"/>
+      </div>
+     </div>
+     <div class="mb-4">
+      <label class="block text-gray-700 font-bold mb-2">
+       Tenure (Months
+       <span class="text-orange-500">
+        Years
+       </span>
+       )
+      </label>
+      <div class="relative">
+       <input class="w-full border border-gray-300 rounded py-2 px-4" readonly="" type="text" value="1"/>
+       <input class="w-full mt-2" max="360" min="1" type="range" value="12"/>
+      </div>
+     </div>
+    </div>
+    <div class="w-1/3 pl-8">
+     <div class="bg-gray-100 p-4 rounded shadow-md">
+      <div class="mb-4">
+       <div class="flex justify-between items-center">
+        <span class="text-gray-700">
+         Principal amount
+        </span>
+        <span class="text-red-600 font-bold">
+         ₹20,00,000
+        </span>
+       </div>
+       <div class="flex justify-between items-center">
+        <span class="text-gray-700">
+         Interest amount
+        </span>
+        <span class="text-red-600 font-bold">
+         ₹96,054
+        </span>
+       </div>
+       <div class="flex justify-between items-center">
+        <span class="text-gray-700">
+         Total amount payable
+        </span>
+        <span class="text-red-600 font-bold">
+         ₹20,96,054
+        </span>
+       </div>
+      </div>
+      <div class="flex justify-center items-center mb-4">
+       <div class="w-24 h-24 bg-red-600 rounded-full flex items-center justify-center">
+        <span class="text-white text-2xl">
+         75%
+        </span>
+       </div>
+      </div>
+      <div class="bg-yellow-300 text-center py-2 rounded mb-4">
+       <span class="text-gray-700 font-bold">
+        Your Monthly EMI is ₹1,74,671
+       </span>
+      </div>
+      <button class="bg-orange-500 text-white w-full py-2 rounded">
+       APPLY FOR HOME LOAN
+      </button>
+     </div>
+     <div class="mt-4 flex justify-between items-center">
+      <a class="text-orange-500" href="#">
+       VIEW AMORTIZATION SCHEDULE
+      </a>
+      <div class="flex items-center">
+       <img alt="QR code to check pre-approved offer" class="w-12 h-12" height="50" src="https://storage.googleapis.com/a1aa/image/ALYkEaJRmsq0AR7ldlQkGCCVsbyX1aZsievTfMxAnGnKLrlTA.jpg" width="50"/>
+       <span class="ml-2 text-orange-500">
+        Scan to check your pre-approved offer
+       </span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="bg-blue-900 text-white py-4 mt-8">
+   <div class="container mx-auto flex justify-between items-center">
+    <a class="text-white" href="#">
+     Cookie Policy
+    </a>
+    <div class="flex items-center space-x-4">
+     <button class="bg-gray-700 text-white px-4 py-2 rounded">
+      Manage
+     </button>
+     <button class="bg-orange-500 text-white px-4 py-2 rounded">
+      OK
+     </button>
+    </div>
+   </div>
+  </div>
+ </body>
+</html> -->
